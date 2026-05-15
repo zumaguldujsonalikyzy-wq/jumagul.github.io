@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .root {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 60px)
+        }
+
+        .field {
+            border: 1px solid black;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+    </style>
+    <title>Kresstic nolik</title>
+
+</head>
+<body>
+    <div class="root">
+        <div class="player"></div>
+        <div class="board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
